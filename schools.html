@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UUIA - 统一大学信息聚合开放服务框架</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UUIA 官方网站">
+  <meta name="author" content="UUIA">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700" rel="stylesheet">
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="assets/plugins/jquery-flipster/dist/jquery.flipster.min.css">
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+  <link rel="icon" type="image/x-ico" href="./favicon.ico" />
+
+  <script src="./assets/js/echarts.js"></script>
+  <script src="./assets/js/china.js"></script>
+
+  <style>
+    .gray-pic {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: gray;
+      opacity: 1.2;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="branding">
+      <div class="container position-relative">
+        <nav class="navbar navbar-expand-lg">
+          <h1 class="site-logo">
+            <a class="navbar-brand" href="/">
+              <img class="logo-icon" style="width: 80px" src="assets/images/logo.png" alt="logo"> 
+              <span class="logo-text"></span>
+            </a>
+          </h1>
+        </nav>
+
+        <ul class="social-list list-inline mb-0 position-absolute">
+          <li class="list-inline-item"><a class="text-dark" href="./solution.html">解决方案</a></li>
+          <li class="list-inline-item"><a class="text-dark" href="./schools.html">学校列表</a></li>
+          <li class="list-inline-item"><a class="text-dark" href="#">社区</a></li>
+          <li class="list-inline-item"><a class="text-dark" href="#">开发者后台</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div id="main" style="width: 1000px;height:900px;margin:50px auto;"></div>
+
+
+  <footer class="footer theme-bg-primary">
+    <div class="container py-5 mb-3">
+      <div class="row">
+        <div class="footer-col col-6 col-lg-3">
+          <h4 class="col-heading">关于我们</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">我们的故事</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">品牌物料</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col col-6 col-lg-3">
+          <h4 class="col-heading">资源</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">开发者中心</a></li>
+            <li><a href="#">Developer APIs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col col-6 col-lg-3">
+          <h4 class="col-heading">法律法规</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">隐私政策</a></li>
+            <li><a href="#">服务条款</a></li>
+            <li><a href="#">安全</a></li>
+            <li><a href="#">知识产权</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col col-6 col-lg-3">
+          <h4 class="col-heading">联系我们</h4>
+          <ul class="social-list list-unstyled mb-0">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+          </ul>
+
+          <div class="mb-2">
+            UUIA<br>
+            Northeastern University <br>
+            Shenyang, Liaoning, 110000
+          </div>
+          <div>
+            <a href="#">weneu2018@163.com</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <hr>
+    </div>
+    <div class="footer-bottom text-center pb-5">
+      <small class="copyright">UUIA | Copyright ©️ 2019 All rights reserved</small>
+    </div>
+
+  </footer>
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Page Specific JS -->
+  <script type="text/javascript" src="assets/plugins/jquery-flipster/dist/jquery.flipster.min.js"></script>
+  <script type="text/javascript" src="assets/js/flipster-custom.js"></script>
+
+  <script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    option = {
+        title: {
+            text: '已开通院校',
+            subtext: 'UUIA院校分布',
+            left: 'center',
+            textStyle: {
+                color: '#000',
+                fontStyle: 'normal',
+                fontWeight: 'bolder',
+                fontFamily: 'sans-serief',
+                fontSize: "30"
+            }
+        },
+        tooltip: {
+            trigger: 'item'
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            data: ['已开通学校数量']
+        },
+        visualMap: {
+            min: 0,
+            max: 200,
+            left: 'left',
+            top: 'bottom',
+            text: ['高', '低'], // 文本，默认为数值文本
+            calculable: true,
+            borderWidth: 0,
+            inRange: {
+                color: ['#e0ffff', '#62AEEC', '#006edd'],
+                symbolSize: [30, 300]
+            }
+        },
+        toolbox: {
+            show: false,
+            orient: 'vertical',
+            left: 'right',
+            top: 'center',
+            feature: {
+                mark: {
+                    show: true
+                },
+                dataView: {
+                    show: true,
+                    readOnly: false
+                },
+                restore: {
+                    show: true
+                },
+                saveAsImage: {
+                    show: true
+                }
+            }
+        },
+        series: [{
+            name: '已开通学校数量',
+            type: 'map',
+            mapType: 'china',
+            roam: false,
+            scale: false,
+            label: {
+                normal: {
+                    textStyle: {
+                        color: "#8b4513"
+                    }
+                },
+                emphasis: {
+                    textStyle: {
+                        color: "#640000"
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true
+                    },
+                    borderWidth: 0,
+                    color: "#FF7F50"
+                },
+                emphasis: {
+                    label: {
+                        show: true
+                    },
+                    borderWidth: 0
+                }
+            },
+            data: [{"name":"","value":164},
+            {"name":"\u4e0a\u6d77","value":67},
+            {"name":"\u4e91\u5357","value":70},
+            {"name":"\u5185\u8499\u53e4","value":54},
+            {"name":"\u5317\u4eac","value":95},
+            {"name":"\u5409\u6797","value":60},
+            {"name":"\u56db\u5ddd","value":109},
+            {"name":"\u5929\u6d25","value":57},
+            {"name":"\u5b81\u590f","value":19},
+            {"name":"\u5b89\u5fbd","value":123},
+            {"name":"\u5c71\u4e1c","value":151},
+            {"name":"\u5c71\u897f","value":82},
+            {"name":"\u5e7f\u4e1c","value":155},
+            {"name":"\u5e7f\u897f","value":71},
+            {"name":"\u65b0\u7586","value":44},
+            {"name":"\u6c5f\u82cf","value":167},
+            {"name":"\u6c5f\u897f","value":103},
+            {"name":"\u6cb3\u5317","value":118},
+            {"name":"\u6cb3\u5357","value":136},
+            {"name":"\u6d59\u6c5f","value":105},
+            {"name":"\u6d77\u5357","value":17},
+            {"name":"\u6e56\u5317","value":126},
+            {"name":"\u6e56\u5357","value":127},
+            {"name":"\u7518\u8083","value":48},
+            {"name":"\u798f\u5efa","value":97},
+            {"name":"\u897f\u85cf","value":5},
+            {"name":"\u8d35\u5dde","value":58},
+            {"name":"\u8fbd\u5b81","value":116},
+            {"name":"\u91cd\u5e86","value":65},
+            {"name":"\u9655\u897f","value":94},
+            {"name":"\u9752\u6d77","value":13},
+            {"name":"\u9ed1\u9f99\u6c5f","value":82}
+          ]
+        }
+      ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    </script>
+
+</body>
+
+</html>

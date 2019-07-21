@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UUIA - 统一大学信息聚合开放服务框架</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UUIA 官方网站">
+  <meta name="author" content="UUIA">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700" rel="stylesheet">
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="assets/plugins/jquery-flipster/dist/jquery.flipster.min.css">
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+  <link rel="icon" type="image/x-ico" href="./favicon.ico" />
+
+  <style>
+    .gray-pic {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: gray;
+      opacity: 1.2;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="branding">
+
+      <div class="container position-relative">
+
+        <nav class="navbar navbar-expand-lg">
+          <h1 class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon" style="width: 80px"
+                src="assets/images/logo.png" alt="logo"> <span class="logo-text"></span></a></h1>
+        </nav>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+  
+              <li><a href="contact.html"></a></li>
+  
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about.html">接入 UUIA</a></li>
+                  <li><a href="team.html">API文档</a></li>
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>组件</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">官方组件</a></li>
+                      <li><a href="#">社区组件</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="faq.html">FAQ</a></li>
+                </ul>
+              </li>
+  
+              <li><a href="index.html"></a></li>
+  
+              <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#signupModal"></a></li>
+  
+            </ul>
+        </div>
+
+        <!-- // Free Version ONLY -->
+        <ul class="social-list list-inline mb-0 position-absolute">
+          <li class="list-inline-item"><a class="text-dark" href="./solution.html">解决方案</a></li>
+          <li class="list-inline-item"><a class="text-dark" href="./schools.html">学校列表</a></li>
+          <li class="list-inline-item"><a class="text-dark" href="#">社区</a></li>
+          <li class="list-inline-item"><a class="text-dark" href="#">开发者后台</a></li>
+        </ul>
+        <!--//social-list-->
+
+      </div>
+      <!--//container-->
+
+    </div>
+    <!--//branding-->
+
+
+  </header>
+  <!--//header-->
+
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="row figure-holder">
+        <div class="col-12 col-md-6 pt-3 pt-md-4">
+          <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">快速部署基于微信生态的高校信息服务</h2>
+          <div class="site-tagline mb-3">
+            UUIA致力于帮助各高校的开发者迅速地搭建起自己学校的移动端校园信息服务，开发者只需要编写本校各信息网站的信息获取代码即可，UUIA负责处理微信端繁杂的交互逻辑并提供界面优美的客户端。</div>
+          <a href="https://github.com/uuia/UUIA" target="view_window"><img style="width:120px" alt="GitHub stars"
+              src="https://img.shields.io/github/stars/uuia/UUIA.svg?style=social"></a>
+        </div>
+      </div>
+      <!--//row-->
+    </div>
+  </section>
+  <!--//hero-section-->
+
+  <section class="logos-section theme-bg-primary py-5 text-center">
+    <div class="container">
+      <h3 class="mb-5">众多开发者的选择</h3>
+      <div class="logos-row row mx-auto">
+        <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+          <div class="item-inner gray-pic">
+            <img style="width: 100px" src="assets/images/logos/logo-1.png" alt="logo">
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+          <div class="item-inner gray-pic">
+            <img style="border-radius:100px; width: 100px;" src="assets/images/logos/logo-2.png" alt="logo">
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+          <div class="item-inner gray-pic">
+            <img style="width: 100px" src="assets/images/logos/logo-3.svg" alt="logo">
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+          <div class="item-inner gray-pic">
+            <img style="width: 100px" src="assets/images/logos/logo-4.png" alt="logo">
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+          <div class="item-inner gray-pic">
+            <img style="width: 100px" src="assets/images/logos/logo-1.png" alt="logo">
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+          <div class="item-inner gray-pic">
+            <img style="width: 100px" src="assets/images/logos/logo-6.png" alt="logo">
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+
+      </div>
+
+    </div>
+    <!--//container-->
+  </section>
+  <!--//logo-section-->
+
+  <section class="benefits-section py-5">
+
+    <div class="container py-lg-5">
+      <h3 class="mb-5 text-center font-weight-bold">UUIA 为你而来</h3>
+      <div class="row">
+        <div class="item col-12 col-lg-4">
+          <div class="item-inner text-center p-3 p-lg-5">
+            <img class="mb-3" src="assets/images/icon-target.svg" alt="" />
+            <h5>专注 UX</h5>
+            <div>优秀界面，立即拥有 </div>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item col-12 col-lg-4">
+          <div class="item-inner text-center p-3 p-lg-5">
+            <img class="mb-3" src="assets/images/icon-rocket.svg" alt="" />
+            <h5>多语言支持</h5>
+            <div>中英日西等多种语言完美支持 </div>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+        <div class="item col-12 col-lg-4">
+          <div class="item-inner text-center p-3 p-lg-5">
+            <img class="mb-3" src="assets/images/icon-cogs.svg" alt="" />
+            <h5>微信多端生态一键部署</h5>
+            <div>改改配置文件，即刻启程 </div>
+          </div>
+          <!--//item-inner-->
+        </div>
+        <!--//item-->
+      </div>
+      <!--//row-->
+      <div class="pt-3 text-center">
+        <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold"
+          href="#nova-bootstrap-landing-page-template-for-mobile-apps/">了解更多</a>
+      </div>
+    </div>
+
+  </section>
+  <!--//benefits-section-->
+
+  <section class="features-section py-5">
+    <div class="container py-lg-5">
+      <h3 class="mb-3 text-center font-weight-bold section-heading">UUIA 丰富特性</h3>
+      <div class="row pt-5 mb-5">
+
+        <div class="col-12 col-md-6 col-xl-5 offset-xl-1 d-none d-md-block">
+          <img class="product-figure product-figure-1 img-fluid" src="assets/images/product-figure-1.png" alt="" />
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-5 pr-xl-3 pt-md-3">
+          <div class="card rounded border-0 shadow-lg  mb-5">
+            <div class="card-body p-4">
+              <h5 class="card-title"><i
+                  class="far fa-chart-bar mr-2 mr-lg-3 text-primary fa-lg fa-fw"></i>先进的服务器架构，快一点，再快一点</h5>
+              <p class="card-text">UUIA 选用最先进的服务器端架构，利用 Spring WebFlux 搭配 Spring Cloud 搭建非阻塞式高并发架构。</p>
+              <a href="#">Learn more <span class="more-arrow">&rarr;</span></a>
+            </div>
+          </div>
+          <!--//card-->
+
+          <div class="card rounded border-0 shadow-lg mb-5">
+            <div class="card-body p-4">
+              <h5 class="card-title"><i
+                  class="fas fa-laptop-code mr-2 mr-lg-3 text-primary fa-lg fa-fw"></i>一个主题，三种外观，选您所好</h5>
+              <p class="card-text">通过主题中的主题（亦称 Scheme），您可以方便地改变您应用的外观，同时所有配置同样适用。 </p>
+              <a href="#">Learn more <span class="more-arrow">&rarr;</span></a>
+            </div>
+          </div>
+          <!--//card-->
+          <div class="card rounded border-0 shadow-lg">
+            <div class="card-body p-4">
+              <h5 class="card-title"><i class="far fa-calendar-alt mr-2 mr-lg-3 text-primary fa-lg fa-fw"></i>相信开源的力量
+              </h5>
+              <p class="card-text">热情的开发者们，日臻丰富的生态，夜夜劳作，只为贡献优秀易用的组件。 </p>
+              <a href="#">Learn more <span class="more-arrow">&rarr;</span></a>
+            </div>
+          </div>
+          <!--//card-->
+        </div>
+
+
+      </div>
+
+      <!-- <div class="row">
+			    <div class="col-12 col-md-6 col-xl-5 order-md-2 pr-xl-3 d-none d-md-block">
+				    <img class="product-figure product-figure-2 img-fluid" src="assets/images/product-figure-2.png" alt="" />
+			    </div>
+			    <div class="col-12 col-md-6 col-xl-5 order-md-1 offset-xl-1 pt-xl-5">
+				    <div class="card rounded border-0 shadow-lg  mb-5">
+					    <div class="card-body p-4">
+							<h5 class="card-title"><i class="fas fa-microphone-alt mr-2 mr-lg-3 text-primary fa-lg fa-fw"></i>Feature Commodo</h5>
+							<p class="card-text">List one of your product's main features here. The screenshots used in this template are taken from <a href="#bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/" target="_blank">Bootstrap 4 admin template Appify</a>. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+							<a href="#" >Learn more <span class="more-arrow">&rarr;</span></a>
+						</div>
+				    </div>
+				    
+				    <div class="card rounded border-0 shadow-lg">
+					    <div class="card-body p-4">
+							<h5 class="card-title"><i class="far fa-comments mr-2 mr-lg-3 text-primary fa-lg fa-fw"></i>Feature  Ligula Eget</h5>
+							<p class="card-text">List one of your product's main features here. Lorem ipsum dolor sit amet. The screenshots used in this template are taken from <a href="#bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/" target="_blank">Bootstrap 4 admin template Appify</a>.</p>
+							<a href="#" >Learn more <span class="more-arrow">&rarr;</span></a>
+						</div>
+				    </div>
+			    </div>
+			   
+		    </div>
+		    
+		    <div class="pt-5 text-center">
+			    <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="#">View all features</a>
+		    </div> -->
+    </div>
+    <!--//container-->
+
+  </section>
+  <!--//features-section-->
+
+  <section class="cta-section py-5 theme-bg-secondary text-center">
+    <div class="container">
+      <h3 class="text-white font-weight-bold mb-3">UUIA 即刻启程</h3>
+      <div class="text-white mx-auto single-col-max-width section-intro">  </div>
+      <a class="btn theme-btn theme-btn-ghost theme-btn-on-bg mt-4"
+        href="#nova-bootstrap-landing-page-template-for-mobile-apps/">扫码体验</a>
+    </div>
+  </section>
+  <!--//cta-section-->
+  <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" title="网站模板">网站模板</a></div>
+
+  <section id="quote" class="testimonial-section py-5">
+    <div class="container py-lg-5">
+      <h3 class="mb-1 mb-md-5 text-center">UUIA 备受好评</h3>
+
+      <div class="row">
+        <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+          <div class="probootstrap-testimony-wrap text-center">
+            <figure>
+              <img style="width: 300px" src="assets/images/likes/person_1.jpg" alt="Free Bootstrap Template">
+            </figure>
+            <blockquote class="quote">&ldquo;极具创新和启发意义的框架
+              在UUIA诞生之前，许许多多的学子已经推出了自己学校的校园服务。但UUIA则带来了创新和突破，TA开拓性地提出了信息聚合和抽象统一的理念，为碎片化的信息集中工作提供了优秀的指导方案。加油，UUIA。&rdquo; <br> 
+              <cite class="author">&mdash; iEdon 
+                <span>We扬大开发者</span>
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+          <div class="probootstrap-testimony-wrap text-center">
+            <figure>
+              <img style="width: 300px" src="assets/images/likes/person_2.jpg" alt="Free Bootstrap Template">
+            </figure>
+            <blockquote class="quote">&ldquo;真的非常好用的框架，极大地帮助到了我们，我们得以迅速推出自己的小程序，迅速将我校信息服务做以升级。&rdquo; <br> 
+              <cite class="author">&mdash; 陈鹏 
+                <span>We湖工开发者</span>
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate" data-animate-effect="fadeIn">
+          <div class="probootstrap-testimony-wrap text-center">
+            <figure>
+              <img style="width: 300px" src="assets/images/likes/person_3.jpg" alt="Free Bootstrap Template">
+            </figure>
+            <blockquote class="quote">&ldquo;思想很令人惊叹，对于局域可用软件这样的定义很准确，我相信UUIA的模式不止在大学校园，在其他很多场景都有很大潜力。&rdquo; <br> 
+              <cite class="author">&mdash; Raven 
+                <span>weNEU开发者</span>
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--//container-->
+
+  </section>
+  <!--//testimonial-section-->
+
+
+  <footer class="footer theme-bg-primary">
+    <div class="container py-5 mb-3">
+      <div class="row">
+        <div class="footer-col col-6 col-lg-3">
+          <h4 class="col-heading">关于我们</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">我们的故事</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">品牌物料</a></li>
+
+          </ul>
+        </div>
+        <!--//footer-col-->
+        <div class="footer-col col-6 col-lg-3">
+          <h4 class="col-heading">资源</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">开发者中心</a></li>
+            <li><a href="#">Developer APIs</a></li>
+          </ul>
+        </div>
+        <!--//footer-col-->
+        <div class="footer-col col-6 col-lg-3">
+          <h4 class="col-heading">法律法规</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">隐私政策</a></li>
+            <li><a href="#">服务条款</a></li>
+            <li><a href="#">安全</a></li>
+            <li><a href="#">知识产权</a></li>
+          </ul>
+        </div>
+        <!--//footer-col-->
+        <div class="footer-col col-6 col-lg-3">
+          <h4 class="col-heading">联系我们</h4>
+          <ul class="social-list list-unstyled mb-0">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+
+          </ul>
+          <!--//social-list-->
+
+          <div class="mb-2">
+            UUIA<br>
+            Northeastern University <br>
+            Shenyang, Liaoning, 110000
+          </div>
+          <div>
+            <a href="#">weneu2018@163.com</a>
+          </div>
+
+        </div>
+        <!--//footer-col-->
+      </div>
+      <!--//row-->
+    </div>
+    <!--//container-->
+    <div class="container">
+      <hr>
+    </div>
+    <!-- <div class="download-area py-4">
+      <div class="container text-center">
+        <h3 class="mb-3">Get the app</h3>
+        <div class="section-intro mb-4 single-col-max-width mx-auto">Download our apps now. lorem ipsum dolor sit amet,
+          consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+          magnis dis. </div>
+        <ul class="app-stores list-unstyled list-inline mx-auto  d-inline-block">
+          <li class="list-inline-item mr-3"><a href="#"><img class="ios" src="assets/images/appstore-apple.svg"
+                alt="app-store"></a></li>
+          <li class="list-inline-item"><a href="#"><img class="android" src="assets/images/appstore-android.svg"
+                alt="google play"></a></li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="footer-bottom text-center pb-5">
+      <small class="copyright">UUIA | Copyright ©️ 2019 All rights reserved</small>
+    </div>
+
+  </footer>
+
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Page Specific JS -->
+  <script type="text/javascript" src="assets/plugins/jquery-flipster/dist/jquery.flipster.min.js"></script>
+  <script type="text/javascript" src="assets/js/flipster-custom.js"></script>
+
+
+</body>
+
+</html>
